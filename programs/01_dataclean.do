@@ -19,12 +19,12 @@
 
 
   clear
-  infile using `dcthu' if rectype=="H", using ("`datpath'/`datpums'")
+  infile using `dcthu' if rectype=="H", using ("`datpums'")
   sort serialno   /* sort data by Serial Number */
   save `dtahu', replace  /* save housing unit data */
 
   clear
-  infile using `dctp' if rectype=="P", using ("`datpath'/`datpums'")
+  infile using `dctp' if rectype=="P", using ("`datpums'")
   sort serialno   /* sort data by Serial Number */
   save `dtap', replace /* save person data */
 

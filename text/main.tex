@@ -1,0 +1,142 @@
+%John M. Abowd and Ian M. Schmutte
+%abowd-schmutte-privacy.tex
+%First: Feb 2013
+%Today: Sep 2014
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,titlepage]{article}
+%TCIDATA{OutputFilter=Latex.dll}
+%------------ External info is stored in these files. Edit at your own risk ---
+
+
+%--------------------
+%-------------------- Page Formatting ------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                     %%
+%%%%%%%% EXACT 1in MARGINS %%%%%%%  %%
+\setlength{\textwidth}{6.5in}     %%  %%
+\setlength{\oddsidemargin}{0in}   %%  %%
+\setlength{\evensidemargin}{0in}  %%  %%
+\setlength{\textheight}{8.75in}   %%  %%
+\setlength{\topmargin}{0in}       %%  %%
+\setlength{\headheight}{0in}      %%  %%
+\setlength{\headsep}{0in}         %%  %%
+\setlength{\footskip}{.5in}       %%  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------- Document information
+%Insert document information here:
+\newcommand{\mytitle}{Imperfect Example: A Test of Reproducibility}
+\newcommand{\myshorttitle}{imperfect-example}
+\newcommand{\myversion}{March 2020}  %\vspace*{3em} PRELIMINARY DRAFT -- PLEASE DO NOT CITE}%
+\newcommand{\mythanks}{
+}
+
+\date{\myversion
+%\\ \vspace*{3em}{THIS VERSION PRELIMINARY AND INCOMPLETE: PLEASE DO NOT CITE}
+}
+%--------------------
+\input{formats}
+\usepackage[named]{algo}
+% suggest \usepackage{algorithm,algorithmic}
+%--------------------
+%try to eliminate the stupid * for \thanks in titlepage
+\renewcommand\footnotemark{}
+%--------------------
+%----------------------
+%To insert un-numbered footnotes (as on the title page)
+%ref: http://en.wikibooks.org/wiki/LaTeX/Formatting#cite_note-csli_footnotes-0
+\makeatletter
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+	% \maketitle
+	% \begin{abstract}
+	% 	\input{EndMob-abstract}
+	% \end{abstract}
+	% \thispagestyle{empty}
+
+	\begin{titlepage}
+		\begin{center}
+			\Large\MakeUppercase{\mytitle} \\ [.5cm]
+			\large
+			\begin{tabular}{cc}
+			Anonymous Author  \\
+			Department of Economics  \\
+			A University  
+
+			\end{tabular} \\ [2cm]
+			\textbf{\today\blfootnote{\mythanks}} \\ [2cm]
+			% PRELIMINARY DRAFT -- PLEASE DO NOT CITE \\ [2cm]
+		\end{center}
+\end{titlepage}
+
+
+	%Disclaimer Page
+
+	%\lehddisclaimer
+	\thispagestyle{empty}
+	\singlespacing
+		\begin{center}
+			\textbf{Abstract} \\ [.5cm]
+		\end{center}
+		\input{abstract}
+	% ------------------------------ Main Document Body---------------
+	%\onehalfspacing
+	% \newpage
+	% \thispagestyle{empty}
+	% \input{\thisdoc-Notes}
+	% \addtocounter{section}{-1} %only when including the notes page
+	
+	 \newpage
+	 \setcounter{page}{1}
+	\doublespacing
+\section{Introduction}
+\label{sec:intro}
+\input{introduction}
+%\cite{Machanavajjhala:OTM:ICDE:2008}.
+
+\section{Background}
+\label{sec:background}
+\input{background}
+
+\section{Data}
+\label{sec:Data}
+\input{Data}
+This paper uses publicly available data from the U.S. Census Bureau. In particular, we use the 2000 Census of Population and Housing: Public Use Microdata 5-Percent Sample. 
+
+
+\section{Results}
+\label{sec:results}
+\input{results}
+
+%\section{Discussion}
+%\label{sec:discussion}
+%\input{discussion}
+
+\section{Conclusion}
+\label{sec:conclusion}
+\input{conclusion}
+
+
+
+	\singlespacing
+	% ------------------------------ Bibliography---------------------
+	 \nocite{*}
+	% \nocite{cipsea}
+	\bibliographystyle{plain}
+	\bibliography{sample.bib}
+
+% Appendix
+%\clearpage
+%\appendix
+%\label{sec:appendix}
+%\input{appendix}
+
+
+\end{document}
+
