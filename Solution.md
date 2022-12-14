@@ -47,7 +47,7 @@ How do you document the problem? In particular, since by fixing it, you solve it
 
 Include the template config file from the replication template.
 
-- Copy `template-config.do` to the `nnnnn/programs/` directory as `config.do`.
+- Copy [`template-config.do`](https://github.com/AEADataEditor/replication-template/blob/master/template-config.do) to the `nnnnn/programs/` directory as `config.do`.
 - Include it in the `master.do`:
 ```
 include "config.do"
@@ -124,7 +124,7 @@ r(199);
 
 Inspection will show that the Stata package `latab` is not available. This will need to be installed. It is not listed in the README.
 
-**Solution 1**: In the `config.do` is a spot to add to-be-installed Stata packages:
+**Solution 1**: In the `config.do` [is a spot](https://github.com/AEADataEditor/replication-template/blob/master/template-config.do#L37) to add to-be-installed Stata packages:
 
 ```
 local ssc_packages ""
