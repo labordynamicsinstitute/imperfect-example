@@ -1,5 +1,4 @@
 clear all
-include "config.do"
 
 
 
