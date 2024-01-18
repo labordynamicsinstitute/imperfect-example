@@ -1,7 +1,7 @@
 /* run all programs from beginning to end */
 
 /* paths */
-local pwd : pwd
+local pwd "/project/programs" // change this for your specific system: this is the path of this particular file
 global basepath "`pwd'/.."      // change this for your specific system
 global icpsrpath "$basepath/data/ICPSR_13568/DS0002"  /* local relative path */
 global inputdata "$basepath/data/inputdata"  // this is where you would read data acquired elsewhere

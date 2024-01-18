@@ -15,7 +15,6 @@
   local dtap  "$outputdata/person.dta"   /* Stata Person data */
   local dctp  "$programs/person.dct"   /* Stata Person dictionary */
   
-  /* global macros are defined in config.do */
 
 
   clear
