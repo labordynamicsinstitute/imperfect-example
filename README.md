@@ -20,6 +20,7 @@ There are 5 Stata program files:
 - `00_setup_stata.do`: will set up directory structure, and install any required packages
 - `01_dataclean.do`: reads in downloaded data, saves person and household files, and creates a clean merged dataset, for Alaska only
 - `02_table1.do`: Creates Table 1
+- `03_figureA1.do`: Creates Figure A1
 
 ## Running code
 
@@ -32,9 +33,17 @@ A log file will be created.
 
 ## Tables
 
-All table output is in folder `tables`:
+All table output is in folder `results`:
 
 | Table | Programs | 
 |-------|----------|
 | Table 1 | 02_table1.do | 
+
+## Figures
+
+Figure A1 in the appendix can be found in folder `results`:
+
+| Figure | Programs |
+|--------|----------|
+| Figure A1 | 03_figureA1.do |
 
