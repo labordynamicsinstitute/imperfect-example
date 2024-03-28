@@ -33,9 +33,15 @@ jobs:
         uses: actions/upload-artifact@v4.3.1
         with:
           # Artifact name
-          name: Uploadable ZIP file # optional, default is artifact
+          name: for_deposit # optional, default is artifact
           # A file, directory or wildcard pattern that describes what to upload
-          path: for_deposit.zip
+          path: |
+            data/ICPSR_13568/ 
+            data/README.md 
+            programs/*do 
+            programs/*.dct 
+            README.md 
+            PDF_Proof.pdf
           
           # The desired behavior if no files are found using the provided path.
           # Available Options:
