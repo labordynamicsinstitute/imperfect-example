@@ -1,0 +1,504 @@
+ This 5% Public Use Microdata Sample Equivalency (PUMEQ5) file is intended to help users understand the relationships        
+ between standard Census 2000 geographic concepts (counties, county subdivisions, places, and census tracts) and the         
+ SuperPUMA and PUMA geographic units of the 5% PUMS data files.                                                              
+                                                                                                                             
+ Each PUMEQ5 file delineates the summary level codes specific to the PUMS geography, and has its own set of summary          
+ level code and hierarchical sequencing, as described below:                                                                 
+                                                                                                                             
+ 780 State-SuperPUMA-PUMA                                                                                                    
+     781 State-SuperPUMA-PUMA-County (or part)                                                                               
+         782 State-SuperPUMA-PUMA-County-County Subdivision (or part) (20 states with functioning county subdivisions)       
+             783 State-SuperPUMA-PUMA-County-County Subdivision-Place/Remainder (or part)                                    
+                 784 State-SuperPUMA-PUMA-County-County Subdivision-Place/Remainder-Census Tract                             
+                                                                                                                             
+ Please note that in the New England states, there may be more than one summary level 781 record within a single             
+ PUMA, since these areas may exist in more than one metropolitan area/nonmetropolitan area.  Please also                     
+ note that county subdivision codes are not used in the 30 states, the District of Columbia, and Puerto Rico,                
+ that have no functioning county subdivisions. Census tracts are shown only when a place has parts in more than              
+ one PUMA.                                                                                                                   
+                                                                                                                             
+ The fields and content of the PUMEQ5 file is described below:                                                               
+                                                                                                                             
+   FIELD     DESCRIPTION                                                                                                     
+                                                                                                                             
+     A       Summary Level Code (described above)                                                                            
+     B       FIPS State Code                                                                                                 
+     C       SuperPUMA Code                                                                                                  
+     D       PUMA Code                                                                                                       
+     E       FIPS County Code                                                                                                
+     F       FIPS County Subdivision Code                                                                                    
+     G       FIPS Place Code                                                                                                 
+     H       Central City Indicator:                                                                                         
+               0 = Not in central city                                                                                       
+               1 = In central city                                                                                           
+     I       Census Tract Code                                                                                               
+     J       Metropolitan Statistical Area/Consolidated Statistical Area Code                                                
+     K       Primary Metropolitan Statistical Area Code                                                                      
+     L       Census 2000 100% Population Count                                                                               
+     M       Area Name                                                                                                       
+                                                                                                                             
+                                                                                                                             
+   A  B     C     D   E     F     G H      I    J    K        L M                                                            
+                                                                                                                             
+ 780 02 02100 00101                                      118678 PUMA 00101                                                   
+ 781 02 02100 00101 020                      0380        118678 Anchorage Municipality (part)                                
+ 783 02 02100 00101 020       03000 1        0380        118678 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000101 0380          4835 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000102 0380          4472 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000201 0380          3060 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000202 0380          5924 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000203 0380          9165 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000204 0380          2461 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000300 0380          5470 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000400 0380          6626 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000500 0380          1948 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000600 0380          6727 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000701 0380          4356 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000702 0380          4432 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000703 0380          4922 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000801 0380          6404 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000802 0380          4084 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000901 0380          4128 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 000902 0380          3029 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 001000 0380          3404 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 001100 0380          1458 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 001200 0380          3907 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 001300 0380          3255 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 001400 0380          5083 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 001500 0380          5275 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 001601 0380          3701 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 001702 0380          5198 Anchorage municipality (part)                                
+ 784 02 02100 00101 020       03000 1 001731 0380          5354 Anchorage municipality (part)                                
+ 780 02 02100 00102                                      141605 PUMA 00102                                                   
+ 781 02 02100 00102 020                      0380        141605 Anchorage Municipality (part)                                
+ 783 02 02100 00102 020       03000 1        0380        141605 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 001602 0380          4633 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 001701 0380          6553 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 001732 0380          6146 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 001801 0380          3919 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 001802 0380          4324 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 001900 0380          4181 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002000 0380          3423 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002100 0380          3761 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002201 0380          4874 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002202 0380          3049 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002301 0380          5394 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002302 0380          4737 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002303 0380          8495 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002400 0380          2917 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002501 0380          4926 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002502 0380          4319 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002601 0380          3540 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002602 0380          4734 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002603 0380          5598 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002702 0380          8612 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002711 0380          5804 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002712 0380          6893 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002811 0380          5790 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002812 0380          6000 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002813 0380          4574 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002821 0380          4875 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002822 0380          4020 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002823 0380          3423 Anchorage municipality (part)                                
+ 784 02 02100 00102 020       03000 1 002900 0380          2091 Anchorage municipality (part)                                
+ 780 02 02100 00200                                      109013 PUMA 00200                                                   
+ 781 02 02100 00200 122                      9999         49691 Kenai Peninsula Borough                                      
+ 783 02 02100 00200 122       03110 0        9999          1845 Anchor Point CDP                                             
+ 783 02 02100 00200 122       05585 0        9999          1748 Bear Creek CDP                                               
+ 783 02 02100 00200 122       06245 0        9999            32 Beluga CDP                                                   
+ 783 02 02100 00200 122       15320 0        9999           173 Clam Gulch CDP                                               
+ 783 02 02100 00200 122       16420 0        9999          1168 Cohoe CDP                                                    
+ 783 02 02100 00200 122       17190 0        9999           369 Cooper Landing CDP                                           
+ 783 02 02100 00200 122       17960 0        9999            75 Crown Point CDP                                              
+ 783 02 02100 00200 122       18925 0        9999          1802 Diamond Ridge CDP                                            
+ 783 02 02100 00200 122       26910 0        9999           616 Fox River CDP                                                
+ 783 02 02100 00200 122       27090 0        9999          1603 Fritz Creek CDP                                              
+ 783 02 02100 00200 122       27145 0        9999           636 Funny River CDP                                              
+ 783 02 02100 00200 122       31270 0        9999            35 Halibut Cove CDP                                             
+ 783 02 02100 00200 122       31710 0        9999           489 Happy Valley CDP                                             
+ 783 02 02100 00200 122       33140 0        9999          3946 Homer city                                                   
+ 783 02 02100 00200 122       33580 0        9999           137 Hope CDP                                                     
+ 783 02 02100 00200 122       36550 0        9999           431 Kachemak city                                                
+ 783 02 02100 00200 122       37250 0        9999          5846 Kalifornsky CDP                                              
+ 783 02 02100 00200 122       38090 0        9999           471 Kasilof CDP                                                  
+ 783 02 02100 00200 122       38420 0        9999          6942 Kenai city                                                   
+ 783 02 02100 00200 122       45295 0        9999            92 Lowell Point CDP                                             
+ 783 02 02100 00200 122       49435 0        9999            74 Miller Landing CDP                                           
+ 783 02 02100 00200 122       50190 0        9999           206 Moose Pass CDP                                               
+ 783 02 02100 00200 122       52210 0        9999           177 Nanwalek CDP                                                 
+ 783 02 02100 00200 122       54050 0        9999          4327 Nikiski CDP                                                  
+ 783 02 02100 00200 122       54085 0        9999           345 Nikolaevsk CDP                                               
+ 783 02 02100 00200 122       54480 0        9999           772 Ninilchik CDP                                                
+ 783 02 02100 00200 122       63280 0        9999           171 Port Graham CDP                                              
+ 783 02 02100 00200 122       64240 0        9999            93 Primrose CDP                                                 
+ 783 02 02100 00200 122       65345 0        9999          1932 Ridgeway CDP                                                 
+ 783 02 02100 00200 122       66510 0        9999           954 Salamatof CDP                                                
+ 783 02 02100 00200 122       68340 0        9999           286 Seldovia city                                                
+ 783 02 02100 00200 122       68370 0        9999           144 Seldovia Village CDP                                         
+ 783 02 02100 00200 122       68560 0        9999          2830 Seward city                                                  
+ 783 02 02100 00200 122       71640 0        9999          3759 Soldotna city                                                
+ 783 02 02100 00200 122       73070 0        9999          4705 Sterling CDP                                                 
+ 783 02 02100 00200 122       73950 0        9999            18 Sunrise CDP                                                  
+ 783 02 02100 00200 122       79890 0        9999           193 Tyonek CDP                                                   
+ 783 02 02100 00200 122       99999 0        9999           249 Remainder of Kenai Peninsula Borough                         
+ 781 02 02100 00200 170                      9999         59322 Matanuska-Susitna Borough                                    
+ 783 02 02100 00200 170       07070 0        9999          2635 Big Lake CDP                                                 
+ 783 02 02100 00200 170       09657 0        9999           699 Buffalo Soapstone CDP                                        
+ 783 02 02100 00200 170       09710 0        9999          2561 Butte CDP                                                    
+ 783 02 02100 00200 170       12350 0        9999            41 Chase CDP                                                    
+ 783 02 02100 00200 170       13340 0        9999           213 Chickaloon CDP                                               
+ 783 02 02100 00200 170       25000 0        9999          1067 Farm Loop CDP                                                
+ 783 02 02100 00200 170       25550 0        9999          2030 Fishhook CDP                                                 
+ 783 02 02100 00200 170       28200 0        9999          2952 Gateway CDP                                                  
+ 783 02 02100 00200 170       28590 0        9999           249 Glacier View CDP                                             
+ 783 02 02100 00200 170       33800 0        9999          1202 Houston city                                                 
+ 783 02 02100 00200 170       40645 0        9999          7049 Knik-Fairview CDP                                            
+ 783 02 02100 00200 170       40670 0        9999           582 Knik River CDP                                               
+ 783 02 02100 00200 170       42805 0        9999            88 Lake Louise CDP                                              
+ 783 02 02100 00200 170       42832 0        9999          6706 Lakes CDP                                                    
+ 783 02 02100 00200 170       43260 0        9999          1158 Lazy Mountain CDP                                            
+ 783 02 02100 00200 170       47735 0        9999          4819 Meadow Lakes CDP                                             
+ 783 02 02100 00200 170       58660 0        9999          4533 Palmer city                                                  
+ 783 02 02100 00200 170       60460 0        9999            27 Petersville CDP                                              
+ 783 02 02100 00200 170       61788 0        9999           111 Point MacKenzie CDP                                          
+ 783 02 02100 00200 170       70870 0        9999           111 Skwentna CDP                                                 
+ 783 02 02100 00200 170       74340 0        9999            37 Susitna CDP                                                  
+ 783 02 02100 00200 170       74525 0        9999          1080 Sutton-Alpine CDP                                            
+ 783 02 02100 00200 170       74830 0        9999           772 Talkeetna CDP                                                
+ 783 02 02100 00200 170       75077 0        9999          4993 Tanaina CDP                                                  
+ 783 02 02100 00200 170       78680 0        9999           423 Trapper Creek CDP                                            
+ 783 02 02100 00200 170       83080 0        9999          5469 Wasilla city                                                 
+ 783 02 02100 00200 170       85280 0        9999          1658 Willow CDP                                                   
+ 783 02 02100 00200 170       86470 0        9999           956 Y CDP                                                        
+ 783 02 02100 00200 170       99999 0        9999          5101 Remainder of Matanuska-Susitna Borough                       
+ 780 02 02100 00300                                      157110 PUMA 00300                                                   
+ 781 02 02100 00300 068                      9999          1893 Denali Borough                                               
+ 783 02 02100 00300 068       03220 0        9999           367 Anderson city                                                
+ 783 02 02100 00300 068       10150 0        9999           222 Cantwell CDP                                                 
+ 783 02 02100 00300 068       25220 0        9999            29 Ferry CDP                                                    
+ 783 02 02100 00300 068       32150 0        9999          1000 Healy CDP                                                    
+ 783 02 02100 00300 068       46560 0        9999           142 McKinley Park CDP                                            
+ 783 02 02100 00300 068       99999 0        9999           133 Remainder of Denali Borough                                  
+ 781 02 02100 00300 090                      9999         82840 Fairbanks North Star Borough                                 
+ 783 02 02100 00300 090       16750 0        9999         11402 College CDP                                                  
+ 783 02 02100 00300 090       21370 0        9999          5400 Eielson AFB CDP                                              
+ 783 02 02100 00300 090       23460 0        9999          1680 Ester CDP                                                    
+ 783 02 02100 00300 090       24230 0        9999         30224 Fairbanks city                                               
+ 783 02 02100 00300 090       26870 0        9999           300 Fox CDP                                                      
+ 783 02 02100 00300 090       31765 0        9999           216 Harding-Birch Lakes CDP                                      
+ 783 02 02100 00300 090       50080 0        9999           542 Moose Creek CDP                                              
+ 783 02 02100 00300 090       55910 0        9999          1570 North Pole city                                              
+ 783 02 02100 00300 090       61120 0        9999           623 Pleasant Valley CDP                                          
+ 783 02 02100 00300 090       66550 0        9999           854 Salcha CDP                                                   
+ 783 02 02100 00300 090       79830 0        9999           482 Two Rivers CDP                                               
+ 783 02 02100 00300 090       99999 0        9999         29547 Remainder of Fairbanks North Star Borough                    
+ 781 02 02100 00300 100                      9999          2392 Haines Borough                                               
+ 783 02 02100 00300 100       17670 0        9999           102 Covenant Life CDP                                            
+ 783 02 02100 00300 100       23900 0        9999            10 Excursion Inlet CDP                                          
+ 783 02 02100 00300 100       31050 0        9999          1811 Haines city                                                  
+ 783 02 02100 00300 100       45700 0        9999            39 Lutak CDP                                                    
+ 783 02 02100 00300 100       50800 0        9999           221 Mosquito Lake CDP                                            
+ 783 02 02100 00300 100       51455 0        9999           137 Mud Bay CDP                                                  
+ 783 02 02100 00300 100       99999 0        9999            72 Remainder of Haines Borough                                  
+ 781 02 02100 00300 110                      9999         30711 Juneau City and Borough                                      
+ 783 02 02100 00300 110       36400 0        9999         30711 Juneau city and borough                                      
+ 781 02 02100 00300 130                      9999         14070 Ketchikan Gateway Borough                                    
+ 783 02 02100 00300 130       38970 0        9999          7922 Ketchikan city                                               
+ 783 02 02100 00300 130       67570 0        9999           431 Saxman city                                                  
+ 783 02 02100 00300 130       99999 0        9999          5717 Remainder of Ketchikan Gateway Borough                       
+ 781 02 02100 00300 220                      9999          8835 Sitka City and Borough                                       
+ 783 02 02100 00300 220       70540 0        9999          8835 Sitka city and borough                                       
+ 781 02 02100 00300 240                      9999          6174 Southeast Fairbanks Census Area                              
+ 783 02 02100 00300 240       01390 0        9999            21 Alcan Border CDP                                             
+ 783 02 02100 00300 240       06850 0        9999           749 Big Delta CDP                                                
+ 783 02 02100 00300 240       13450 0        9999            17 Chicken CDP                                                  
+ 783 02 02100 00300 240       18620 0        9999           840 Delta Junction city                                          
+ 783 02 02100 00300 240       18675 0        9999          1570 Deltana CDP                                                  
+ 783 02 02100 00300 240       19720 0        9999            19 Dot Lake CDP                                                 
+ 783 02 02100 00300 240       19750 0        9999            38 Dot Lake Village CDP                                         
+ 783 02 02100 00300 240       20020 0        9999           128 Dry Creek CDP                                                
+ 783 02 02100 00300 240       20380 0        9999           129 Eagle city                                                   
+ 783 02 02100 00300 240       20600 0        9999            68 Eagle Village CDP                                            
+ 783 02 02100 00300 240       26100 0        9999           461 Fort Greely CDP                                              
+ 783 02 02100 00300 240       32310 0        9999            37 Healy Lake CDP                                               
+ 783 02 02100 00300 240       56220 0        9999            95 Northway CDP                                                 
+ 783 02 02100 00300 240       56250 0        9999            72 Northway Junction CDP                                        
+ 783 02 02100 00300 240       56260 0        9999           107 Northway Village CDP                                         
+ 783 02 02100 00300 240       75050 0        9999           140 Tanacross CDP                                                
+ 783 02 02100 00300 240       76590 0        9999           117 Tetlin CDP                                                   
+ 783 02 02100 00300 240       77800 0        9999          1393 Tok CDP                                                      
+ 783 02 02100 00300 240       99999 0        9999           173 Remainder of Southeast Fairbanks Census Area                 
+ 781 02 02100 00300 261                      9999         10195 Valdez-Cordova Census Area                                   
+ 783 02 02100 00300 261       12970 0        9999            86 Chenega CDP                                                  
+ 783 02 02100 00300 261       13890 0        9999             0 Chisana CDP                                                  
+ 783 02 02100 00300 261       14000 0        9999            93 Chistochina CDP                                              
+ 783 02 02100 00300 261       14110 0        9999           123 Chitina CDP                                                  
+ 783 02 02100 00300 261       17300 0        9999           362 Copper Center CDP                                            
+ 783 02 02100 00300 261       17380 0        9999           179 Copperville CDP                                              
+ 783 02 02100 00300 261       17410 0        9999          2454 Cordova city                                                 
+ 783 02 02100 00300 261       27420 0        9999           215 Gakona CDP                                                   
+ 783 02 02100 00300 261       28740 0        9999           554 Glennallen CDP                                               
+ 783 02 02100 00300 261       30500 0        9999            88 Gulkana CDP                                                  
+ 783 02 02100 00300 261       38910 0        9999           410 Kenny Lake CDP                                               
+ 783 02 02100 00300 261       45790 0        9999            42 McCarthy CDP                                                 
+ 783 02 02100 00300 261       48200 0        9999            63 Mendeltna CDP                                                
+ 783 02 02100 00300 261       48540 0        9999           142 Mentasta Lake CDP                                            
+ 783 02 02100 00300 261       52915 0        9999            71 Nelchina CDP                                                 
+ 783 02 02100 00300 261       59320 0        9999            43 Paxson CDP                                                   
+ 783 02 02100 00300 261       70320 0        9999           130 Silver Springs CDP                                           
+ 783 02 02100 00300 261       70930 0        9999           124 Slana CDP                                                    
+ 783 02 02100 00300 261       75380 0        9999           107 Tatitlek CDP                                                 
+ 783 02 02100 00300 261       75480 0        9999           149 Tazlina CDP                                                  
+ 783 02 02100 00300 261       78297 0        9999            27 Tolsona CDP                                                  
+ 783 02 02100 00300 261       78350 0        9999            92 Tonsina CDP                                                  
+ 783 02 02100 00300 261       82200 0        9999          4036 Valdez city                                                  
+ 783 02 02100 00300 261       84510 0        9999           182 Whittier city                                                
+ 783 02 02100 00300 261       85290 0        9999           201 Willow Creek CDP                                             
+ 783 02 02100 00300 261       99999 0        9999           222 Remainder of Valdez-Cordova Census Area                      
+ 780 02 02100 00400                                      100526 PUMA 00400                                                   
+ 781 02 02100 00400 013                      9999          2697 Aleutians East Borough                                       
+ 783 02 02100 00400 013       01090 0        9999           713 Akutan city                                                  
+ 783 02 02100 00400 013       16530 0        9999            88 Cold Bay city                                                
+ 783 02 02100 00400 013       24660 0        9999            64 False Pass city                                              
+ 783 02 02100 00400 013       39410 0        9999           792 King Cove city                                               
+ 783 02 02100 00400 013       52940 0        9999            83 Nelson Lagoon CDP                                            
+ 783 02 02100 00400 013       67020 0        9999           952 Sand Point city                                              
+ 783 02 02100 00400 013       99999 0        9999             5 Remainder of Aleutians East Borough                          
+ 781 02 02100 00400 016                      9999          5465 Aleutians West Census Area                                   
+ 783 02 02100 00400 016       00065 0        9999           316 Adak CDP                                                     
+ 783 02 02100 00400 016       04210 0        9999            92 Atka city                                                    
+ 783 02 02100 00400 016       04670 0        9999            20 Attu Station CDP                                             
+ 783 02 02100 00400 016       54260 0        9999            39 Nikolski CDP                                                 
+ 783 02 02100 00400 016       65800 0        9999           152 St. George city                                              
+ 783 02 02100 00400 016       66470 0        9999           532 St. Paul city                                                
+ 783 02 02100 00400 016       80770 0        9999          4283 Unalaska city                                                
+ 783 02 02100 00400 016       99999 0        9999            31 Remainder of Aleutians West Census Area                      
+ 781 02 02100 00400 050                      9999         16006 Bethel Census Area                                           
+ 783 02 02100 00400 050       00760 0        9999           585 Akiachak CDP                                                 
+ 783 02 02100 00400 050       00870 0        9999           309 Akiak city                                                   
+ 783 02 02100 00400 050       03550 0        9999           572 Aniak city                                                   
+ 783 02 02100 00400 050       04430 0        9999           294 Atmautluak CDP                                               
+ 783 02 02100 00400 050       06520 0        9999          5471 Bethel city                                                  
+ 783 02 02100 00400 050       12680 0        9999           394 Chefornak city                                               
+ 783 02 02100 00400 050       14330 0        9999           119 Chuathbaluk city                                             
+ 783 02 02100 00400 050       17850 0        9999           137 Crooked Creek CDP                                            
+ 783 02 02100 00400 050       21040 0        9999           280 Eek city                                                     
+ 783 02 02100 00400 050       29290 0        9999           230 Goodnews Bay city                                            
+ 783 02 02100 00400 050       37975 0        9999           543 Kasigluk CDP                                                 
+ 783 02 02100 00400 050       39740 0        9999           644 Kipnuk CDP                                                   
+ 783 02 02100 00400 050       41610 0        9999           359 Kongiganak CDP                                               
+ 783 02 02100 00400 050       42380 0        9999           713 Kwethluk city                                                
+ 783 02 02100 00400 050       42490 0        9999           338 Kwigillingok CDP                                             
+ 783 02 02100 00400 050       44030 0        9999             6 Lime Village CDP                                             
+ 783 02 02100 00400 050       45460 0        9999           267 Lower Kalskag city                                           
+ 783 02 02100 00400 050       47990 0        9999           210 Mekoryuk city                                                
+ 783 02 02100 00400 050       52390 0        9999           353 Napakiak city                                                
+ 783 02 02100 00400 050       52720 0        9999           390 Napaskiak city                                               
+ 783 02 02100 00400 050       53820 0        9999           321 Newtok CDP                                                   
+ 783 02 02100 00400 050       53930 0        9999           208 Nightmute city                                               
+ 783 02 02100 00400 050       56680 0        9999           466 Nunapitchuk city                                             
+ 783 02 02100 00400 050       58330 0        9999            61 Oscarville CDP                                               
+ 783 02 02100 00400 050       61080 0        9999            41 Platinum city                                                
+ 783 02 02100 00400 050       64600 0        9999           555 Quinhagak city                                               
+ 783 02 02100 00400 050       64930 0        9999            48 Red Devil CDP                                                
+ 783 02 02100 00400 050       71090 0        9999           100 Sleetmute CDP                                                
+ 783 02 02100 00400 050       73400 0        9999            61 Stony River CDP                                              
+ 783 02 02100 00400 050       78240 0        9999           532 Toksook Bay city                                             
+ 783 02 02100 00400 050       78790 0        9999           428 Tuluksak CDP                                                 
+ 783 02 02100 00400 050       79120 0        9999           370 Tuntutuliak CDP                                              
+ 783 02 02100 00400 050       79230 0        9999           325 Tununak CDP                                                  
+ 783 02 02100 00400 050       81320 0        9999           230 Upper Kalskag city                                           
+ 783 02 02100 00400 050       99999 0        9999            46 Remainder of Bethel Census Area                              
+ 781 02 02100 00400 060                      9999          1258 Bristol Bay Borough                                          
+ 783 02 02100 00400 060       39630 0        9999           442 King Salmon CDP                                              
+ 783 02 02100 00400 060       52060 0        9999           678 Naknek CDP                                                   
+ 783 02 02100 00400 060       72190 0        9999           137 South Naknek CDP                                             
+ 783 02 02100 00400 060       99999 0        9999             1 Remainder of Bristol Bay Borough                             
+ 781 02 02100 00400 070                      9999          4922 Dillingham Census Area                                       
+ 783 02 02100 00400 070       01420 0        9999           221 Aleknagik city                                               
+ 783 02 02100 00400 070       15450 0        9999            75 Clark's Point city                                           
+ 783 02 02100 00400 070       18950 0        9999          2466 Dillingham city                                              
+ 783 02 02100 00400 070       21810 0        9999           130 Ekwok city                                                   
+ 783 02 02100 00400 070       41500 0        9999           182 Koliganek CDP                                                
+ 783 02 02100 00400 070       46890 0        9999           399 Manokotak city                                               
+ 783 02 02100 00400 070       53710 0        9999           471 New Stuyahok city                                            
+ 783 02 02100 00400 070       62285 0        9999            36 Portage Creek CDP                                            
+ 783 02 02100 00400 070       77690 0        9999           809 Togiak city                                                  
+ 783 02 02100 00400 070       79780 0        9999            69 Twin Hills CDP                                               
+ 783 02 02100 00400 070       99999 0        9999            64 Remainder of Dillingham Census Area                          
+ 781 02 02100 00400 150                      9999         13913 Kodiak Island Borough                                        
+ 783 02 02100 00400 150       00650 0        9999            80 Akhiok city                                                  
+ 783 02 02100 00400 150       01560 0        9999            68 Aleneva CDP                                                  
+ 783 02 02100 00400 150       13860 0        9999            50 Chiniak CDP                                                  
+ 783 02 02100 00400 150       37540 0        9999            27 Karluk CDP                                                   
+ 783 02 02100 00400 150       40950 0        9999          6334 Kodiak city                                                  
+ 783 02 02100 00400 150       41210 0        9999          1840 Kodiak  Station CDP                                          
+ 783 02 02100 00400 150       43040 0        9999           115 Larsen Bay city                                              
+ 783 02 02100 00400 150       57340 0        9999           237 Old Harbor city                                              
+ 783 02 02100 00400 150       58550 0        9999           225 Ouzinkie city                                                
+ 783 02 02100 00400 150       63610 0        9999           256 Port Lions city                                              
+ 783 02 02100 00400 150       85680 0        9999           690 Womens Bay CDP                                               
+ 783 02 02100 00400 150       99999 0        9999          3991 Remainder of Kodiak Island Borough                           
+ 781 02 02100 00400 164                      9999          1823 Lake and Peninsula Borough                                   
+ 783 02 02100 00400 164       13550 0        9999            79 Chignik city                                                 
+ 783 02 02100 00400 164       13670 0        9999           103 Chignik Lagoon CDP                                           
+ 783 02 02100 00400 164       13780 0        9999           145 Chignik Lake CDP                                             
+ 783 02 02100 00400 164       21150 0        9999           116 Egegik city                                                  
+ 783 02 02100 00400 164       34790 0        9999            53 Igiugig CDP                                                  
+ 783 02 02100 00400 164       35120 0        9999           102 Iliamna CDP                                                  
+ 783 02 02100 00400 164       35890 0        9999            22 Ivanof Bay CDP                                               
+ 783 02 02100 00400 164       41280 0        9999           174 Kokhanok CDP                                                 
+ 783 02 02100 00400 164       43810 0        9999           122 Levelock CDP                                                 
+ 783 02 02100 00400 164       53270 0        9999           160 Newhalen city                                                
+ 783 02 02100 00400 164       55030 0        9999           221 Nondalton city                                               
+ 783 02 02100 00400 164       59540 0        9999            50 Pedro Bay CDP                                                
+ 783 02 02100 00400 164       60200 0        9999           107 Perryville CDP                                               
+ 783 02 02100 00400 164       60640 0        9999           100 Pilot Point city                                             
+ 783 02 02100 00400 164       62125 0        9999             8 Pope-Vannoy Landing CDP                                      
+ 783 02 02100 00400 164       62620 0        9999           104 Port Alsworth CDP                                            
+ 783 02 02100 00400 164       63390 0        9999           119 Port Heiden city                                             
+ 783 02 02100 00400 164       80100 0        9999            11 Ugashik CDP                                                  
+ 783 02 02100 00400 164       99999 0        9999            27 Remainder of Lake and Peninsula Borough                      
+ 781 02 02100 00400 180                      9999          9196 Nome Census Area                                             
+ 783 02 02100 00400 180       08740 0        9999           276 Brevig Mission city                                          
+ 783 02 02100 00400 180       19060 0        9999           146 Diomede city                                                 
+ 783 02 02100 00400 180       22250 0        9999           313 Elim city                                                    
+ 783 02 02100 00400 180       27640 0        9999           649 Gambell city                                                 
+ 783 02 02100 00400 180       29180 0        9999           144 Golovin city                                                 
+ 783 02 02100 00400 180       41940 0        9999           297 Koyuk city                                                   
+ 783 02 02100 00400 180       54920 0        9999          3505 Nome city                                                    
+ 783 02 02100 00400 180       63170 0        9999            21 Port Clarence CDP                                            
+ 783 02 02100 00400 180       66360 0        9999           368 St. Michael city                                             
+ 783 02 02100 00400 180       67460 0        9999           643 Savoonga city                                                
+ 783 02 02100 00400 180       68890 0        9999           230 Shaktoolik city                                              
+ 783 02 02100 00400 180       69770 0        9999           562 Shishmaref city                                              
+ 783 02 02100 00400 180       72960 0        9999           547 Stebbins city                                                
+ 783 02 02100 00400 180       75930 0        9999           268 Teller city                                                  
+ 783 02 02100 00400 180       80660 0        9999           747 Unalakleet city                                              
+ 783 02 02100 00400 180       82860 0        9999           152 Wales city                                                   
+ 783 02 02100 00400 180       84070 0        9999           203 White Mountain city                                          
+ 783 02 02100 00400 180       99999 0        9999           125 Remainder of Nome Census Area                                
+ 781 02 02100 00400 185                      9999          7385 North Slope Borough                                          
+ 783 02 02100 00400 185       01882 0        9999             0 Alpine CDP                                                   
+ 783 02 02100 00400 185       02080 0        9999           282 Anaktuvuk Pass city                                          
+ 783 02 02100 00400 185       04500 0        9999           228 Atqasuk city                                                 
+ 783 02 02100 00400 185       05200 0        9999          4581 Barrow city                                                  
+ 783 02 02100 00400 185       36990 0        9999           293 Kaktovik city                                                
+ 783 02 02100 00400 185       56320 0        9999           433 Nuiqsut city                                                 
+ 783 02 02100 00400 185       61630 0        9999           757 Point Hope city                                              
+ 783 02 02100 00400 185       61700 0        9999           247 Point Lay CDP                                                
+ 783 02 02100 00400 185       64380 0        9999             5 Prudhoe Bay CDP                                              
+ 783 02 02100 00400 185       82750 0        9999           546 Wainwright city                                              
+ 783 02 02100 00400 185       99999 0        9999            13 Remainder of North Slope Borough                             
+ 781 02 02100 00400 188                      9999          7208 Northwest Arctic Borough                                     
+ 783 02 02100 00400 188       01970 0        9999           309 Ambler city                                                  
+ 783 02 02100 00400 188       09600 0        9999           406 Buckland city                                                
+ 783 02 02100 00400 188       18510 0        9999           136 Deering city                                                 
+ 783 02 02100 00400 188       39300 0        9999           388 Kiana city                                                   
+ 783 02 02100 00400 188       39960 0        9999           377 Kivalina city                                                
+ 783 02 02100 00400 188       40840 0        9999           109 Kobuk city                                                   
+ 783 02 02100 00400 188       41830 0        9999          3082 Kotzebue city                                                
+ 783 02 02100 00400 188       54700 0        9999           428 Noatak CDP                                                   
+ 783 02 02100 00400 188       55140 0        9999           634 Noorvik city                                                 
+ 783 02 02100 00400 188       64980 0        9999            32 Red Dog Mine CDP                                             
+ 783 02 02100 00400 188       68230 0        9999           772 Selawik city                                                 
+ 783 02 02100 00400 188       70100 0        9999           256 Shungnak city                                                
+ 783 02 02100 00400 188       99999 0        9999           279 Remainder of Northwest Arctic Borough                        
+ 781 02 02100 00400 201                      9999          6146 Prince of Wales-Outer Ketchikan Census Area                  
+ 783 02 02100 00400 201       16360 0        9999           199 Coffman Cove city                                            
+ 783 02 02100 00400 201       17740 0        9999          1397 Craig city                                                   
+ 783 02 02100 00400 201       20970 0        9999            49 Edna Bay CDP                                                 
+ 783 02 02100 00400 201       32810 0        9999           139 Hollis CDP                                                   
+ 783 02 02100 00400 201       34460 0        9999           382 Hydaburg city                                                
+ 783 02 02100 00400 201       34570 0        9999            97 Hyder CDP                                                    
+ 783 02 02100 00400 201       37650 0        9999            39 Kasaan city                                                  
+ 783 02 02100 00400 201       40400 0        9999           854 Klawock city                                                 
+ 783 02 02100 00400 201       48870 0        9999          1375 Metlakatla CDP                                               
+ 783 02 02100 00400 201       48980 0        9999            21 Meyers Chuck CDP                                             
+ 783 02 02100 00400 201       52845 0        9999           135 Naukati Bay CDP                                              
+ 783 02 02100 00400 201       61190 0        9999            35 Point Baker CDP                                              
+ 783 02 02100 00400 201       63870 0        9999            63 Port Protection CDP                                          
+ 783 02 02100 00400 201       77140 0        9999           557 Thorne Bay city                                              
+ 783 02 02100 00400 201       84000 0        9999            58 Whale Pass CDP                                               
+ 783 02 02100 00400 201       99999 0        9999           746 Remainder of Prince of Wales-Outer Ketchikan Census Area     
+ 781 02 02100 00400 232                      9999          3436 Skagway-Hoonah-Angoon Census Area                            
+ 783 02 02100 00400 232       03440 0        9999           572 Angoon city                                                  
+ 783 02 02100 00400 232       18030 0        9999            72 Cube Cove CDP                                                
+ 783 02 02100 00400 232       22140 0        9999            32 Elfin Cove CDP                                               
+ 783 02 02100 00400 232       27700 0        9999            35 Game Creek CDP                                               
+ 783 02 02100 00400 232       30940 0        9999           429 Gustavus CDP                                                 
+ 783 02 02100 00400 232       32550 0        9999             3 Hobart Bay CDP                                               
+ 783 02 02100 00400 232       33360 0        9999           860 Hoonah city                                                  
+ 783 02 02100 00400 232       40510 0        9999           139 Klukwan CDP                                                  
+ 783 02 02100 00400 232       59650 0        9999           163 Pelican city                                                 
+ 783 02 02100 00400 232       70760 0        9999           862 Skagway city                                                 
+ 783 02 02100 00400 232       76260 0        9999           104 Tenakee Springs city                                         
+ 783 02 02100 00400 232       84200 0        9999           116 Whitestone Logging Camp CDP                                  
+ 783 02 02100 00400 232       99999 0        9999            49 Remainder of Skagway-Hoonah-Angoon Census Area               
+ 781 02 02100 00400 270                      9999          7028 Wade Hampton Census Area                                     
+ 783 02 02100 00400 270       01200 0        9999           652 Alakanuk city                                                
+ 783 02 02100 00400 270       13230 0        9999           765 Chevak city                                                  
+ 783 02 02100 00400 270       22910 0        9999           767 Emmonak city                                                 
+ 783 02 02100 00400 270       33470 0        9999          1014 Hooper Bay city                                              
+ 783 02 02100 00400 270       41720 0        9999           591 Kotlik city                                                  
+ 783 02 02100 00400 270       47000 0        9999           349 Marshall city                                                
+ 783 02 02100 00400 270       51180 0        9999           755 Mountain Village city                                        
+ 783 02 02100 00400 270       60750 0        9999           550 Pilot Station city                                           
+ 783 02 02100 00400 270       60860 0        9999           125 Pitkas Point CDP                                             
+ 783 02 02100 00400 270       65700 0        9999           296 Russian Mission city                                         
+ 783 02 02100 00400 270       66140 0        9999           500 St. Mary's city                                              
+ 783 02 02100 00400 270       67680 0        9999           465 Scammon Bay city                                             
+ 783 02 02100 00400 270       69220 0        9999           164 Sheldon Point (Nunam Iqua) city                              
+ 783 02 02100 00400 270       99999 0        9999            35 Remainder of Wade Hampton Census Area                        
+ 781 02 02100 00400 280                      9999          6684 Wrangell-Petersburg Census Area                              
+ 783 02 02100 00400 280       36770 0        9999           710 Kake city                                                    
+ 783 02 02100 00400 280       42160 0        9999            23 Kupreanof city                                               
+ 783 02 02100 00400 280       60310 0        9999          3224 Petersburg city                                              
+ 783 02 02100 00400 280       62510 0        9999            81 Port Alexander city                                          
+ 783 02 02100 00400 280       76970 0        9999            22 Thoms Place CDP                                              
+ 783 02 02100 00400 280       86380 0        9999          2308 Wrangell city                                                
+ 783 02 02100 00400 280       99999 0        9999           316 Remainder of Wrangell-Petersburg Census Area                 
+ 781 02 02100 00400 282                      9999           808 Yakutat City and Borough                                     
+ 783 02 02100 00400 282       86490 0        9999           680 Yakutat CDP                                                  
+ 783 02 02100 00400 282       99999 0        9999           128 Remainder of Yakutat City and Borough                        
+ 781 02 02100 00400 290                      9999          6551 Yukon-Koyukuk Census Area                                    
+ 783 02 02100 00400 290       01305 0        9999            35 Alatna CDP                                                   
+ 783 02 02100 00400 290       01860 0        9999            97 Allakaket city                                               
+ 783 02 02100 00400 290       03880 0        9999           104 Anvik city                                                   
+ 783 02 02100 00400 290       03990 0        9999           152 Arctic Village CDP                                           
+ 783 02 02100 00400 290       05750 0        9999            84 Beaver CDP                                                   
+ 783 02 02100 00400 290       06630 0        9999            43 Bettles city                                                 
+ 783 02 02100 00400 290       07620 0        9999            28 Birch Creek CDP                                              
+ 783 02 02100 00400 290       11690 0        9999           134 Central CDP                                                  
+ 783 02 02100 00400 290       11800 0        9999            83 Chalkyitsik CDP                                              
+ 783 02 02100 00400 290       14880 0        9999           100 Circle CDP                                                   
+ 783 02 02100 00400 290       16630 0        9999            13 Coldfoot CDP                                                 
+ 783 02 02100 00400 290       23790 0        9999            28 Evansville CDP                                               
+ 783 02 02100 00400 290       25880 0        9999             4 Flat CDP                                                     
+ 783 02 02100 00400 290       26760 0        9999           595 Fort Yukon city                                              
+ 783 02 02100 00400 290       26835 0        9999            38 Four Mile Road CDP                                           
+ 783 02 02100 00400 290       27530 0        9999           675 Galena city                                                  
+ 783 02 02100 00400 290       30060 0        9999           194 Grayling city                                                
+ 783 02 02100 00400 290       33030 0        9999           227 Holy Cross city                                              
+ 783 02 02100 00400 290       33910 0        9999            78 Hughes city                                                  
+ 783 02 02100 00400 290       34350 0        9999           293 Huslia city                                                  
+ 783 02 02100 00400 290       37430 0        9999           230 Kaltag city                                                  
+ 783 02 02100 00400 290       42050 0        9999           101 Koyukuk city                                                 
+ 783 02 02100 00400 290       42820 0        9999            32 Lake Minchumina CDP                                          
+ 783 02 02100 00400 290       44580 0        9999            29 Livengood CDP                                                
+ 783 02 02100 00400 290       46010 0        9999           401 McGrath city                                                 
+ 783 02 02100 00400 290       46780 0        9999            72 Manley Hot Springs CDP                                       
+ 783 02 02100 00400 290       49530 0        9999           258 Minto CDP                                                    
+ 783 02 02100 00400 290       53050 0        9999           402 Nenana city                                                  
+ 783 02 02100 00400 290       53162 0        9999            36 New Allakaket CDP                                            
+ 783 02 02100 00400 290       54150 0        9999           100 Nikolai city                                                 
+ 783 02 02100 00400 290       56350 0        9999           336 Nulato city                                                  
+ 783 02 02100 00400 290       64820 0        9999            45 Rampart CDP                                                  
+ 783 02 02100 00400 290       65590 0        9999           188 Ruby city                                                    
+ 783 02 02100 00400 290       68670 0        9999           129 Shageluk city                                                
+ 783 02 02100 00400 290       73290 0        9999            87 Stevens Village CDP                                          
+ 783 02 02100 00400 290       74610 0        9999            50 Takotna CDP                                                  
+ 783 02 02100 00400 290       75160 0        9999           308 Tanana city                                                  
+ 783 02 02100 00400 290       82420 0        9999           202 Venetie CDP                                                  
+ 783 02 02100 00400 290       85610 0        9999            21 Wiseman CDP                                                  
+ 783 02 02100 00400 290       99999 0        9999           519 Remainder of Yukon-Koyukuk Census Area                       
