@@ -154,8 +154,8 @@ Save, commit, run again.
 ## Problem 4
 
 ```
-(file /project/programs/../tables/freq_specific_ak.tex not found)
-file /project/programs/../tables/freq_specific_ak.tex could not be opened
+(file /project/programs/../results/freq_specific_ak.tex not found)
+file /project/programs/../results/freq_specific_ak.tex could not be opened
 r(603);
 
 end of do-file
@@ -168,15 +168,17 @@ r(603);
 
 You should be able to figure this one out by now!
 
+## Problem 5
+Once you have solved all these problems, you should compare the output table (here in the form of a Tex file - not the nicest to compare, but we only care about the numbers!) and appendix figure with the manuscript (`PDF_Proof.pdf`). That comparison should go into the report as well. 
+
+In this case you will notice that the figure in the paper has a data point missing compared to the one created by the code. This is documented using an annotated screenshot in the solution report for this case.
+
 ## Final
 
-Once you have solved all the problems, you should compare the table output (here in the form of a Tex file - not the nicest to compare, but we only care about the numbers!) with the manuscript (`PDF_Proof.pdf`). 
+The file `code-check.xlsx` can help you keep track of many tables and figures, and you can copy-paste the results into the REPLICATION.md. You should note any minor discrepancy.
 
-That comparison should go into the report as well. The file `code-check.xlsx` can help you keep track of many tables, and you can copy-paste the results into the REPLICATION.md. 
-
-You should note any minor discrepancy. 
-
-- Listing them out, or screenshotting and including in the report are both acceptable methods. 
+- Listing discrepancies out, or screenshotting and including in the report are both acceptable methods.
+- Annotating PNG versions of figures to highlight where they differ from the report is encouraged.
 - Ensure that all screenshots are included in the git repository! (no remote references)
 - Ensure that you include them in the `REPLICATION.md` with the correct file extension (Windows might hide them, but the Linux systems care about them, including about the case of the extension - `PNG` is not the same as `png` for case-sensitive filesystems.)
 
